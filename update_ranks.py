@@ -5,43 +5,54 @@ import datetime
 import os
 
 def update():
-    # 1. Load Tickers
-    with open('tickers.json', 'r') as f:
-        tickers = json.load(f)['symbols']
+    try:
+        # 1. Load Tickers
+        with open('tickers.json', 'r') as f:
+            tickers = json.load(f)['symbols']
 
-    # 2. Download recent data (enough to calculate 12-1 momentum)
-    # We need at least 252 trading days of history
-    data = yf.download(tickers, period="2y", auto_adjust=True)['Close']
-    
-    # Handle MultiIndex
-    if isinstance(data.columns, pd.MultiIndex):
-        data.columns = data.columns.get_level_values(0)
-    
-    data = data.ffill()
+        # 2. Download data
+        # We use period="2y" to ensure we have enough history for the 252-day lookback
+        df = yf.download(tickers, period="2y", auto_adjust=True)
+        
+        # Expert Fix: Force the dataframe to only include 'Close' prices and flatten headers
+        if 'Close' in df.columns.levels[0] if isinstance(df.columns, pd.MultiIndex) else False:
+            data = df['Close']
+        else:
+            data = df
+            
+        data = data.ffill()
 
-    # 3. Calculate today's ranking
-    # Momentum = Price 21 days ago / Price 252 days ago - 1
-    p_now = data.iloc[-1] # Most recent closing price
-    p_21d = data.iloc[-21]
-    p_252d = data.iloc[-252]
-    
-    momentum_scores = (p_21d / p_252d) - 1
-    new_ranks = momentum_scores.dropna().rank(ascending=False, method='min')
-    
-    today_str = data.index[-1].strftime('%Y-%m-%d')
+        # 3. Calculate today's rankings
+        # We use iloc to get relative positions (today, 1 month ago, 1 year ago)
+        p_now = data.iloc[-1]
+        p_21d = data.iloc[-21]
+        p_252d = data.iloc[-252]
+        
+        momentum_scores = (p_21d / p_252d) - 1
+        
+        # Rank: 1 is the best. 'first' avoids ties crashing the script
+        new_ranks = momentum_scores.rank(ascending=False, method='first')
+        
+        today_str = data.index[-1].strftime('%Y-%m-%d')
+        print(f"Calculating for date: {today_str}")
 
-    # 4. Load history and append
-    df_history = pd.read_csv('rankings_history.csv', index_col=0)
-    
-    # Update or Add the row for today
-    df_history.loc[today_str] = new_ranks
-    
-    # Keep only the last 300 days of data to keep the file small/fast
-    df_history = df_history.tail(300)
-    
-    # Save back to CSV
-    df_history.to_csv('rankings_history.csv')
-    print(f"Successfully updated rankings for {today_str}")
+        # 4. Update the CSV
+        if os.path.exists('rankings_history.csv'):
+            df_history = pd.read_csv('rankings_history.csv', index_col=0)
+            # Ensure the columns match
+            df_history.loc[today_str] = new_ranks
+            # Keep the last 365 entries to prevent file bloat
+            df_history = df_history.tail(365)
+        else:
+            # Fallback if file is missing
+            df_history = pd.DataFrame({today_str: new_ranks}).T
+            
+        df_history.to_csv('rankings_history.csv')
+        print("✅ Successfully updated rankings_history.csv")
+
+    except Exception as e:
+        print(f"❌ Script failed with error: {e}")
+        raise # This ensures GitHub Actions sees the failure
 
 if __name__ == "__main__":
     update()
