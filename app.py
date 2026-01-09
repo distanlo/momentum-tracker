@@ -32,26 +32,39 @@ try:
     # 5. Join them
     final_df = pd.concat([summary_df, heatmap_df], axis=1)
 
-    # --- NEW: Convert Tickers to TradingView Links ---
-    # We create a new index with Markdown links
-    link_template = "[{ticker}](https://www.tradingview.com/symbols/{ticker}/)"
-    final_df.index = [link_template.format(ticker=t) for t in final_df.index]
+    # --- NEW: Setup the TradingView Link Logic ---
+    # Move the ticker symbols from the index into a real column named 'Ticker'
+    final_df.reset_index(inplace=True)
+    final_df.rename(columns={'index': 'Ticker'}, inplace=True)
+    
+    # Create the full URL for TradingView
+    final_df['Chart Link'] = "https://www.tradingview.com/symbols/" + final_df['Ticker'] + "/"
 
     # 6. Styling Logic
     def color_rankings(val):
-        if pd.isna(val): return ''
+        if not isinstance(val, (int, float)) or pd.isna(val): return ''
         if val <= 10: return 'background-color: #008000; color: white'
         elif val <= 25: return 'background-color: #90EE90; color: black'
         elif val <= 75: return 'background-color: #FFFFE0; color: black'
         else: return 'background-color: #FFB6C1; color: black'
 
-    # 7. Display with column configuration for links
+    # 7. Display with Link Configuration
     st.subheader("Historical Shift vs. Recent Daily Trend")
     
-    # st.column_config.LinkColumn makes the Markdown clickable in the index/first column
-    st.dataframe(
-        final_df.style.applymap(color_rankings).format(precision=0),
+    st.data_editor(
+        final_df.style.applymap(color_rankings).format(precision=0, subset=final_df.columns.drop(['Ticker', 'Chart Link'])),
+        column_config={
+            "Chart Link": st.column_config.LinkColumn(
+                "Chart",
+                help="Click to open TradingView chart",
+                validate="^https://.*",
+                display_text="Open Chart 📈"
+            ),
+            "Ticker": st.column_config.TextColumn("ETF Symbol")
+        },
+        hide_index=True,
         use_container_width=True,
+        disabled=True, # Keeps it looking like a static dataframe
         height=800
     )
 
