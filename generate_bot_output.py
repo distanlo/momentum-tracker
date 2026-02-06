@@ -18,12 +18,15 @@ import pandas as pd
 
 
 def generate():
-    csv_path = "rankings_history.csv"
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    csv_path = os.path.join(script_dir, "rankings_history.csv")
+    api_dir = os.path.join(script_dir, "api")
+
     if not os.path.exists(csv_path):
-        print("rankings_history.csv not found, skipping bot output generation.")
+        print(f"rankings_history.csv not found at {csv_path}, skipping bot output generation.")
         return
 
-    os.makedirs("api", exist_ok=True)
+    os.makedirs(api_dir, exist_ok=True)
 
     # ── Load data (same logic as app.py) ────────────────────────────
     df = pd.read_csv(csv_path, index_col=0)
@@ -94,9 +97,10 @@ def generate():
         "rankings": rankings_list,
     }
 
-    with open("api/rankings.json", "w") as f:
+    json_path = os.path.join(api_dir, "rankings.json")
+    with open(json_path, "w") as f:
         json.dump(json_payload, f, indent=2)
-    print("Wrote api/rankings.json")
+    print(f"Wrote {json_path}")
 
     # ── 2. Plain-text table ─────────────────────────────────────────
     lines = []
@@ -132,9 +136,10 @@ def generate():
         lines.append(f"{ticker:<8} {vals}")
 
     txt = "\n".join(lines) + "\n"
-    with open("api/latest.txt", "w") as f:
+    txt_path = os.path.join(api_dir, "latest.txt")
+    with open(txt_path, "w") as f:
         f.write(txt)
-    print("Wrote api/latest.txt")
+    print(f"Wrote {txt_path}")
 
     # ── 3. Static HTML ──────────────────────────────────────────────
     def rank_color(val):
@@ -185,12 +190,19 @@ def generate():
         html_parts.append("</tr>")
 
     html_parts.append("</tbody></table>")
+    html_parts.append('<h2>Bot-Readable Endpoints</h2>')
+    html_parts.append("<ul>")
+    html_parts.append('<li><strong>JSON:</strong> <a href="https://raw.githubusercontent.com/distanlo/momentum-tracker/main/api/rankings.json">api/rankings.json</a></li>')
+    html_parts.append('<li><strong>Plain Text:</strong> <a href="https://raw.githubusercontent.com/distanlo/momentum-tracker/main/api/latest.txt">api/latest.txt</a></li>')
+    html_parts.append('<li><strong>HTML:</strong> <a href="https://raw.githubusercontent.com/distanlo/momentum-tracker/main/api/index.html">api/index.html</a></li>')
+    html_parts.append("</ul>")
     html_parts.append(f'<p style="margin-top:20px;color:#666">Generated {datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")}</p>')
     html_parts.append("</body></html>")
 
-    with open("api/index.html", "w") as f:
+    html_path = os.path.join(api_dir, "index.html")
+    with open(html_path, "w") as f:
         f.write("\n".join(html_parts))
-    print("Wrote api/index.html")
+    print(f"Wrote {html_path}")
 
 
 if __name__ == "__main__":
