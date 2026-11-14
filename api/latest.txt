@@ -1,198 +1,198 @@
-ETF Momentum Rankings  (as of 2026-11-12)
+ETF Momentum Rankings  (as of 2026-11-13)
 Lower rank = stronger momentum.  Tiers: 1-10 strong | 11-25 good | 26-75 neutral | 76+ weak
 
 Ticker   Current  1MoAgo  6WkAgo  2MoAgo  Tier    
 --------------------------------------------------
 BNO            1       3       3       6  strong  
-USO            2       2       2       3  strong  
+USO            2       2       2       5  strong  
 UGA            3       1       1       1  strong  
-ARKG           4       6       7       9  strong  
-SMH            5       4       5       2  strong  
-XLE            6       8       9      15  strong  
-XOP            7       7      11      18  strong  
-XSD            8      10      13       5  strong  
-HACK           9      14      28      23  strong  
-XHS           10      18      20      19  strong  
-OIH           11       5       4       7  good    
-XTL           12      16      14      11  good    
-CANE          13      43      57      63  good    
-XBI           14       9       6       4  good    
-COPX          15      12       8       8  good    
-XLK           16      19      23      20  good    
-IHE           17      13      16      12  good    
-PICK          18      15      10      14  good    
-IBB           19      17      17      16  good    
-CPER          20      22      22      22  good    
-XPH           21      11      12      10  good    
-SKYY          22      26      33      42  good    
-SIL           23      25      15      21  good    
-XLV           24      29      31      30  good    
-XLB           25      36      38      47  good    
-KRE           26      30      32      35  neutral 
-DBB           27      23      27      32  neutral 
-MOO           28      28      29      51  neutral 
-XLP           29      47      53      53  neutral 
-SOYB          30      21      26      50  neutral 
-WEAT          31      20      24      49  neutral 
-ROBO          32      32      36      31  neutral 
-KBE           33      34      34      39  neutral 
-IYT           34      38      39      38  neutral 
-PEJ           35      53      59      52  neutral 
-DBA           36      45      51      64  neutral 
-PAVE          37      42      43      34  neutral 
-GDX           38      31      21      25  neutral 
-GDXJ          39      33      19      24  neutral 
-XLI           40      41      46      37  neutral 
-IFRA          41      46      49      40  neutral 
-XRT           42      64      65      69  neutral 
-XHE           43      37      37      44  neutral 
-REZ           44      40      48      48  neutral 
-SLV           45      27      18      13  neutral 
-XSW           46      62      61      71  neutral 
-XITK          47      55      64      62  neutral 
-LIT           48      24      25      17  neutral 
-VOX           49      57      63      73  neutral 
-XME           50      58      30      27  neutral 
-ARKK          51      65      73      72  neutral 
-VNQ           52      51      56      54  neutral 
-XLF           53      49      55      55  neutral 
-JETS          54      44      40      43  neutral 
-KCE           55      54      44      58  neutral 
-DRIV          56      35      35      28  neutral 
-CORN          57      39      47      66  neutral 
-ARKW          58      75      80      81  neutral 
-XLC           59      63      71      77  neutral 
-IAI           60      48      45      57  neutral 
-PPLT          61      52      42      36  neutral 
-IGV           62      72      78      82  neutral 
-GLD           63      60      41      45  neutral 
-ITA           64      59      58      33  neutral 
-IYC           65      71      74      75  neutral 
-WOOD          66      56      70      76  neutral 
-XLY           67      69      72      74  neutral 
-XAR           68      61      60      26  neutral 
-MSOS          69      73      76      67  neutral 
-XLU           70      74      66      60  neutral 
-ICLN          71      50      52      41  neutral 
-BOTZ          72      68      69      61  neutral 
-HAIL          73      67      67      56  neutral 
-XHB           74      76      79      78  neutral 
-ESPO          75      83      86      85  neutral 
-ARKF          76      87      84      89  weak    
-BLOK          77      82      77      80  weak    
-ITB           78      80      82      83  weak    
-NERD          79      85      87      88  weak    
-HERO          80      84      85      86  weak    
-IHI           81      78      81      79  weak    
-TAN           82      70      62      46  weak    
-IDRV          83      66      68      68  weak    
-REMX          84      77      54      29  weak    
-BETZ          85      81      83      84  weak    
-URA           86      88      75      65  weak    
-PALL          87      86      50      59  weak    
-UNG           88      79      88      90  weak    
-MJ            89      89      89      87  weak    
+ARKG           4       6       7       3  strong  
+SMH            5       4       4       2  strong  
+XLE            6       8      10      18  strong  
+XOP            7       7      12      19  strong  
+XSD            8       9       9       9  strong  
+HACK           9      13      27      27  strong  
+OIH           10       5       5       8  strong  
+XHS           11      19      19      23  good    
+XTL           12      15      14      13  good    
+COPX          13      11       8       7  good    
+CANE          14      43      55      62  good    
+XBI           15      10       6       4  good    
+XLK           16      17      21      24  good    
+PICK          17      16      11      15  good    
+IHE           18      14      17      12  good    
+CPER          19      20      24      22  good    
+IBB           20      18      16      14  good    
+XPH           21      12      13      10  good    
+SIL           22      29      15      16  good    
+SKYY          23      28      33      42  good    
+XLB           24      34      37      46  good    
+XLV           25      30      32      28  good    
+KRE           26      23      31      44  neutral 
+DBB           27      24      28      29  neutral 
+XLP           28      50      52      55  neutral 
+MOO           29      31      30      52  neutral 
+GDX           30      39      22      21  neutral 
+GDXJ          31      38      20      17  neutral 
+KBE           32      26      36      48  neutral 
+SOYB          33      21      25      47  neutral 
+PAVE          34      40      41      35  neutral 
+PEJ           35      51      56      54  neutral 
+ROBO          36      32      34      33  neutral 
+IYT           37      36      38      34  neutral 
+WEAT          38      22      23      43  neutral 
+XLI           39      41      42      38  neutral 
+DBA           40      48      51      61  neutral 
+IFRA          41      49      46      40  neutral 
+REZ           42      44      49      49  neutral 
+XME           43      59      29      25  neutral 
+XRT           44      64      65      70  neutral 
+SLV           45      27      18      11  neutral 
+XHE           46      35      39      39  neutral 
+XSW           47      63      64      71  neutral 
+VNQ           48      54      57      53  neutral 
+XLF           49      47      53      60  neutral 
+ARKK          50      60      72      68  neutral 
+KCE           51      46      44      56  neutral 
+VOX           52      57      63      75  neutral 
+XITK          53      53      62      67  neutral 
+DRIV          54      33      35      31  neutral 
+JETS          55      37      40      50  neutral 
+PPLT          56      55      48      26  neutral 
+ITA           57      56      58      36  neutral 
+IAI           58      45      47      58  neutral 
+ARKW          59      74      79      81  neutral 
+LIT           60      25      26      20  neutral 
+XLC           61      65      75      78  neutral 
+GLD           62      61      45      37  neutral 
+CORN          63      42      43      66  neutral 
+XAR           64      62      59      30  neutral 
+XLU           65      77      69      63  neutral 
+ICLN          66      52      50      41  neutral 
+XLY           67      70      74      73  neutral 
+IGV           68      76      80      82  neutral 
+IYC           69      73      76      74  neutral 
+MSOS          70      66      70      57  neutral 
+WOOD          71      58      68      76  neutral 
+BOTZ          72      68      71      64  neutral 
+HAIL          73      67      67      59  neutral 
+XHB           74      78      78      77  neutral 
+ESPO          75      82      85      86  neutral 
+BLOK          76      75      77      80  weak    
+ARKF          77      84      84      89  weak    
+NERD          78      86      86      88  weak    
+ITB           79      81      82      83  weak    
+HERO          80      83      87      87  weak    
+TAN           81      72      61      45  weak    
+IHI           82      80      81      79  weak    
+BETZ          83      85      83      84  weak    
+IDRV          84      71      66      69  weak    
+URA           85      88      73      65  weak    
+REMX          86      69      60      32  weak    
+MJ            87      89      89      85  weak    
+PALL          88      87      54      51  weak    
+UNG           89      79      88      90  weak    
 LOOP          90      90      90      91  weak    
 BAL            -       -       -       -  N/A     
 BJK            -       -       -       -  N/A     
-COW            -       -       -      70  N/A     
+COW            -       -       -      72  N/A     
 JO             -       -       -       -  N/A     
 NIB            -       -       -       -  N/A     
 XWEB           -       -       -       -  N/A     
 
 --- 10-Day Rank History ---
 
-Ticker   10-30 11-02 11-03 11-04 11-05 11-06 11-09 11-10 11-11 11-12
+Ticker   11-02 11-03 11-04 11-05 11-06 11-09 11-10 11-11 11-12 11-13
 --------------------------------------------------------------------
-BNO          2     2     2     2     2     1     1     1     1     1
-USO          3     3     3     3     3     3     3     3     2     2
-UGA          1     1     1     1     1     2     2     2     3     3
-ARKG         4     4     5     5     5     4     4     4     4     4
-SMH          5     5     4     4     4     5     5     5     5     5
-XLE          8     8     8     8     8     9     8     7     6     6
-XOP          7     7     7     7     6     7     7     6     7     7
-XSD          6     6     6     6     7     6     6     8     8     8
-HACK         9    10    10    10     9     8     9     9     9     9
-XHS         20    16    18    21    20    19    20    16    13    10
-OIH         13    11    13    13    12    13    13    12    14    11
-XTL         12    13    11    11    11    11    11    11    12    12
-CANE        21    18    19    17    19    20    16    13    11    13
-XBI         11    12    12    12    13    12    12    14    17    14
-COPX        10     9     9     9    10    10    10    10    10    15
-XLK         14    15    16    14    15    15    14    15    15    16
-IHE         15    17    17    18    17    18    18    19    18    17
-PICK        16    14    14    15    16    16    15    17    16    18
-IBB         17    20    20    19    22    22    22    22    20    19
-CPER        22    22    21    20    21    21    21    18    19    20
-XPH         19    21    22    22    18    17    19    20    21    21
-SKYY        28    28    28    26    25    24    23    23    22    22
-SIL         18    19    15    16    14    14    17    21    23    23
-XLV         32    32    34    30    31    30    27    26    24    24
-XLB         36    33    29    34    29    31    32    28    28    25
-KRE         26    27    27    33    30    33    34    33    30    26
-DBB         31    34    32    28    28    27    28    24    25    27
-MOO         35    30    30    32    27    32    31    25    26    28
-XLP         49    46    43    46    38    40    36    35    29    29
-SOYB        29    31    31    29    32    28    29    27    27    30
-WEAT        30    29    33    37    37    37    33    34    32    31
-ROBO        27    26    26    27    33    29    30    30    31    32
-KBE         34    35    36    39    36    38    37    37    35    33
-IYT         37    42    44    42    39    39    42    38    34    34
-PEJ         48    51    50    47    45    46    46    43    41    35
-DBA         40    41    45    44    43    43    40    40    36    36
-PAVE        38    39    38    40    40    41    38    36    33    37
-GDX         25    25    25    24    24    25    26    32    39    38
-GDXJ        24    24    24    23    23    23    24    31    40    39
-XLI         42    44    40    43    41    44    43    41    38    40
-IFRA        47    47    42    45    46    47    44    39    37    41
-XRT         59    57    57    57    55    55    55    50    47    42
-XHE         39    37    46    48    47    42    39    42    46    43
-REZ         46    49    48    52    50    53    51    47    45    44
-SLV         23    23    23    25    26    26    25    29    43    45
-XSW         62    60    61    56    56    54    54    52    54    46
-XITK        44    45    47    41    42    36    45    46    50    47
-LIT         43    38    35    31    35    35    35    45    42    48
-VOX         57    55    53    53    51    58    53    51    52    49
-XME         45    40    37    35    34    34    41    44    44    50
-ARKK        53    54    60    55    59    50    48    54    53    51
-VNQ         54    56    55    60    57    57    57    56    55    52
-XLF         55    53    54    58    53    56    56    55    51    53
-JETS        33    36    39    36    44    45    50    48    48    54
-KCE         50    48    51    49    49    52    52    53    56    55
-DRIV        41    43    41    38    48    48    47    49    49    56
-CORN        51    52    52    51    52    62    58    58    57    57
-ARKW        67    68    67    63    63    60    59    61    61    58
-XLC         63    62    63    64    61    65    63    62    62    59
-IAI         60    59    58    61    60    61    61    59    59    60
-PPLT        52    50    49    54    54    51    49    57    58    61
-IGV         69    69    69    68    65    63    62    63    64    62
-GLD         58    58    56    59    58    59    60    60    60    63
-ITA         66    65    66    69    66    64    65    65    63    64
-IYC         72    71    74    72    71    72    70    69    68    65
-WOOD        64    64    64    67    64    67    67    64    65    66
-XLY         70    72    75    73    74    73    71    70    70    67
-XAR         71    70    73    74    69    69    69    71    71    68
-MSOS        56    63    59    50    62    49    64    79    72    69
-XLU         76    74    72    71    70    74    72    67    66    70
-ICLN        61    61    62    62    68    68    66    66    67    71
-BOTZ        65    66    71    70    72    66    68    68    69    72
-HAIL        68    67    68    65    73    71    73    72    73    73
-XHB         73    73    70    75    75    77    78    73    75    74
-ESPO        78    78    80    79    78    78    75    74    74    75
-ARKF        84    84    84    81    80    75    74    75    76    76
-BLOK        75    76    78    76    79    76    77    76    77    77
-ITB         79    80    77    80    76    81    84    80    80    78
-NERD        82    82    82    83    82    82    80    78    78    79
-HERO        80    83    81    82    81    80    79    77    79    80
-IHI         83    81    83    85    83    86    82    81    81    81
-TAN         74    77    76    77    85    83    83    84    84    82
-IDRV        81    79    79    78    77    79    81    82    82    83
-REMX        77    75    65    66    67    70    76    83    83    84
-BETZ        88    85    86    87    84    85    85    85    85    85
-URA         89    89    85    84    86    84    86    87    86    86
-PALL        86    86    87    88    88    88    87    88    88    87
-UNG         85    87    89    89    87    89    89    86    87    88
-MJ          87    88    88    86    89    87    88    89    89    89
+BNO          2     2     2     2     1     1     1     1     1     1
+USO          3     3     3     3     3     3     3     2     2     2
+UGA          1     1     1     1     2     2     2     3     3     3
+ARKG         4     5     5     5     4     4     4     4     4     4
+SMH          5     4     4     4     5     5     5     5     5     5
+XLE          8     8     8     8     9     8     7     6     6     6
+XOP          7     7     7     6     7     7     6     7     7     7
+XSD          6     6     6     7     6     6     8     8     8     8
+HACK        10    10    10     9     8     9     9     9     9     9
+OIH         11    13    13    12    13    13    12    14    11    10
+XHS         16    18    21    20    19    20    16    13    10    11
+XTL         13    11    11    11    11    11    11    12    12    12
+COPX         9     9     9    10    10    10    10    10    15    13
+CANE        18    19    17    19    20    16    13    11    13    14
+XBI         12    12    12    13    12    12    14    17    14    15
+XLK         15    16    14    15    15    14    15    15    16    16
+PICK        14    14    15    16    16    15    17    16    18    17
+IHE         17    17    18    17    18    18    19    18    17    18
+CPER        22    21    20    21    21    21    18    19    20    19
+IBB         20    20    19    22    22    22    22    20    19    20
+XPH         21    22    22    18    17    19    20    21    21    21
+SIL         19    15    16    14    14    17    21    23    23    22
+SKYY        28    28    26    25    24    23    23    22    22    23
+XLB         33    29    34    29    31    32    28    28    25    24
+XLV         32    34    30    31    30    27    26    24    24    25
+KRE         27    27    33    30    33    34    33    30    26    26
+DBB         34    32    28    28    27    28    24    25    27    27
+XLP         46    43    46    38    40    36    35    29    29    28
+MOO         30    30    32    27    32    31    25    26    28    29
+GDX         25    25    24    24    25    26    32    39    38    30
+GDXJ        24    24    23    23    23    24    31    40    39    31
+KBE         35    36    39    36    38    37    37    35    33    32
+SOYB        31    31    29    32    28    29    27    27    30    33
+PAVE        39    38    40    40    41    38    36    33    37    34
+PEJ         51    50    47    45    46    46    43    41    35    35
+ROBO        26    26    27    33    29    30    30    31    32    36
+IYT         42    44    42    39    39    42    38    34    34    37
+WEAT        29    33    37    37    37    33    34    32    31    38
+XLI         44    40    43    41    44    43    41    38    40    39
+DBA         41    45    44    43    43    40    40    36    36    40
+IFRA        47    42    45    46    47    44    39    37    41    41
+REZ         49    48    52    50    53    51    47    45    44    42
+XME         40    37    35    34    34    41    44    44    50    43
+XRT         57    57    57    55    55    55    50    47    42    44
+SLV         23    23    25    26    26    25    29    43    45    45
+XHE         37    46    48    47    42    39    42    46    43    46
+XSW         60    61    56    56    54    54    52    54    46    47
+VNQ         56    55    60    57    57    57    56    55    52    48
+XLF         53    54    58    53    56    56    55    51    53    49
+ARKK        54    60    55    59    50    48    54    53    51    50
+KCE         48    51    49    49    52    52    53    56    55    51
+VOX         55    53    53    51    58    53    51    52    49    52
+XITK        45    47    41    42    36    45    46    50    47    53
+DRIV        43    41    38    48    48    47    49    49    56    54
+JETS        36    39    36    44    45    50    48    48    54    55
+PPLT        50    49    54    54    51    49    57    58    61    56
+ITA         65    66    69    66    64    65    65    63    64    57
+IAI         59    58    61    60    61    61    59    59    60    58
+ARKW        68    67    63    63    60    59    61    61    58    59
+LIT         38    35    31    35    35    35    45    42    48    60
+XLC         62    63    64    61    65    63    62    62    59    61
+GLD         58    56    59    58    59    60    60    60    63    62
+CORN        52    52    51    52    62    58    58    57    57    63
+XAR         70    73    74    69    69    69    71    71    68    64
+XLU         74    72    71    70    74    72    67    66    70    65
+ICLN        61    62    62    68    68    66    66    67    71    66
+XLY         72    75    73    74    73    71    70    70    67    67
+IGV         69    69    68    65    63    62    63    64    62    68
+IYC         71    74    72    71    72    70    69    68    65    69
+MSOS        63    59    50    62    49    64    79    72    69    70
+WOOD        64    64    67    64    67    67    64    65    66    71
+BOTZ        66    71    70    72    66    68    68    69    72    72
+HAIL        67    68    65    73    71    73    72    73    73    73
+XHB         73    70    75    75    77    78    73    75    74    74
+ESPO        78    80    79    78    78    75    74    74    75    75
+BLOK        76    78    76    79    76    77    76    77    77    76
+ARKF        84    84    81    80    75    74    75    76    76    77
+NERD        82    82    83    82    82    80    78    78    79    78
+ITB         80    77    80    76    81    84    80    80    78    79
+HERO        83    81    82    81    80    79    77    79    80    80
+TAN         77    76    77    85    83    83    84    84    82    81
+IHI         81    83    85    83    86    82    81    81    81    82
+BETZ        85    86    87    84    85    85    85    85    85    83
+IDRV        79    79    78    77    79    81    82    82    83    84
+URA         89    85    84    86    84    86    87    86    86    85
+REMX        75    65    66    67    70    76    83    83    84    86
+MJ          88    88    86    89    87    88    89    89    89    87
+PALL        86    87    88    88    88    87    88    88    87    88
+UNG         87    89    89    87    89    89    86    87    88    89
 LOOP        90    90    90    90    90    90    90    90    90    90
 BAL          -     -     -     -     -     -     -     -     -     -
 BJK          -     -     -     -     -     -     -     -     -     -
